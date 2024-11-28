@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.Scene9">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b4637" height="425.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b95ab" height="38.0" layoutX="14.0" layoutY="158.0" stroke="BLACK" strokeType="INSIDE" width="149.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6bb487" height="38.0" layoutX="22.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="99.0" />
+        <Label layoutX="34.0" layoutY="17.0" text="Customer">
+            <font>
+                <Font name="Berlin Sans FB" size="18.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a7961" height="103.0" layoutX="14.0" layoutY="52.0" stroke="BLACK" strokeType="INSIDE" width="544.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc2c4" height="25.0" layoutX="30.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="83.0" />
+        <Label layoutX="44.0" layoutY="73.0" text="First name" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc2c4" height="25.0" layoutX="30.0" layoutY="112.0" stroke="BLACK" strokeType="INSIDE" width="83.0" />
+        <Label layoutX="44.0" layoutY="115.0" text="Last name" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc2c4" height="25.0" layoutX="300.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="83.0" />
+        <Label layoutX="325.0" layoutY="73.0" text="Alamat" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8cc2c4" height="25.0" layoutX="302.0" layoutY="111.0" stroke="BLACK" strokeType="INSIDE" width="83.0" />
+        <Label layoutX="322.0" layoutY="115.0" text="No telp" />
+        <TextField fx:id="First_name" layoutX="130.0" layoutY="69.0" />
+        <TextField fx:id="Last_name" layoutX="130.0" layoutY="111.0" />
+        <TextField fx:id="alamat" layoutX="390.0" layoutY="69.0" />
+        <TextField fx:id="No_WA" layoutX="390.0" layoutY="111.0" />
+        <Label layoutX="23.0" layoutY="168.0" text="Id customer" />
+        <TextField disable="true" fx:id="idud" layoutX="114.0" layoutY="164.0" prefHeight="25.0" prefWidth="26.0" />
+        <TableView fx:id="satu" layoutX="13.0" layoutY="221.0" onMouseClicked="#getRowTable" prefHeight="190.0" prefWidth="574.0">
+            <columns>
+                <TableColumn fx:id="tbl_idcus" prefWidth="75.0" text="Id_customer" />
+                <TableColumn fx:id="tbl_firstcus" prefWidth="92.800048828125" text="First_name" />
+                <TableColumn fx:id="tbl_lastcus" prefWidth="85.800048828125" text="Last_name" />
+                <TableColumn fx:id="tbl_alamat" prefWidth="157.3999481201172" text="Alamat" />
+                <TableColumn fx:id="tbl_nowa" prefWidth="180.79998779296875" text="No_telp" />
+            </columns>
+        </TableView>
+      <Button layoutX="268.0" layoutY="164.0" mnemonicParsing="false" onAction="#addData" prefHeight="38.0" prefWidth="63.0" text="Save" />
+      <Button layoutX="342.0" layoutY="164.0" mnemonicParsing="false" onAction="#UpdateData" prefHeight="38.0" prefWidth="63.0" text="Update" />
+      <Button layoutX="418.0" layoutY="164.0" mnemonicParsing="false" onAction="#DeleteData" prefHeight="38.0" prefWidth="63.0" text="Delete" />
+      <Button layoutX="493.0" layoutY="164.0" mnemonicParsing="false" onAction="#Tombolkedua" prefHeight="38.0" prefWidth="63.0" text="Back" />
+    </children>
+</Pane>

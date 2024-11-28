@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="301.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.SceneSearchCust">
+   <children>
+      <TableView fx:id="satu" onMouseClicked="#getRowTable" prefHeight="233.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tbl_cus" prefWidth="99.20001375675201" text="Id_Customer" />
+          <TableColumn fx:id="tbl_first" prefWidth="99.39998626708984" text="First name" />
+            <TableColumn fx:id="tbl_last" prefWidth="99.0" text="Last name" />
+            <TableColumn fx:id="tbl_alamatt" prefWidth="176.0" text="Alamat" />
+            <TableColumn fx:id="tbl_nowaa" prefWidth="125.60006713867188" text="No telp" />
+        </columns>
+      </TableView>
+      <Button layoutX="261.0" layoutY="245.0" mnemonicParsing="false" onAction="#Kembali" prefHeight="42.0" prefWidth="67.0" text="OK" />
+      <TextField disable="true" fx:id="Puji" layoutX="92.0" layoutY="255.0" prefHeight="26.0" prefWidth="67.0" />
+      <Label layoutX="22.0" layoutY="258.0" text="Yang dipilih" />
+   </children>
+</AnchorPane>

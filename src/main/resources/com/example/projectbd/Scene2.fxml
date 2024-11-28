@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1310.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.Scene2">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#727b5e" height="528.0" layoutX="-30.0" layoutY="74.0" stroke="BLACK" strokeType="INSIDE" width="1341.0" />
+        <Button fx:id="delete" layoutX="999.0" layoutY="192.0" mnemonicParsing="false" onAction="#DeleteData" prefHeight="38.0" prefWidth="55.0" text="Delete" />
+        <Button fx:id="update" layoutX="929.0" layoutY="193.0" mnemonicParsing="false" onAction="#UpdateData" prefHeight="38.0" prefWidth="55.0" text="Update" />
+        <Button fx:id="save" layoutX="854.0" layoutY="192.0" mnemonicParsing="false" onAction="#addData" prefHeight="38.0" prefWidth="55.0" text="Save" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6d9671" height="48.0" stroke="BLACK" strokeType="INSIDE" width="1310.0" />
+        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="210.0" layoutY="-7.0" prefHeight="62.0" prefWidth="499.0" text="LAUNDRY WAS WIS WUS" textAlignment="JUSTIFY">
+            <font>
+                <Font name="Bodoni MT Condensed" size="42.0" />
+            </font>
+        </Label>
+        <MenuBar layoutX="2.0" layoutY="48.0" prefHeight="26.0" prefWidth="854.0">
+            <menus>
+                <Menu mnemonicParsing="false" onAction="#TombolButton" text="Menu">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Kategori" />
+                        <MenuItem mnemonicParsing="false" onAction="#TombolItem" text="Item" />
+                        <MenuItem mnemonicParsing="false" onAction="#TombolPromo" text="Promo" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" onAction="#TombolButton" text="Pegawai">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Tomboldelapan" text="Pegawai" />
+                        <MenuItem mnemonicParsing="false" onAction="#Tomboljob" text="Job" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" onAction="#TombolButton" text="Transaksi">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Tombolkesepuluh" text="History Transaksi" />
+                        <MenuItem mnemonicParsing="false" onAction="#Tombolkemethode" text="Metode" />
+                    </items>
+                </Menu>
+            <Menu mnemonicParsing="false" onAction="#TombolButton" text="Customer">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Tombolkesembilan" text="Data" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#TombolReport" text="Report">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#TomboAnalisis" text="Analisis" />
+                  <MenuItem mnemonicParsing="false" onAction="#TombolReport" text="Laporan Penjualan" />
+               </items>
+            </Menu>
+            </menus>
+        </MenuBar>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="12.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="229.0" />
+        <TableView fx:id="DataView" layoutX="14.0" layoutY="249.0" onMouseClicked="#getRowTable" prefHeight="298.0" prefWidth="1286.0">
+            <columns>
+                <TableColumn fx:id="tblpes" prefWidth="46.39999485015869" text="ID" />
+                <TableColumn fx:id="tblcust" prefWidth="73.60000228881836" text="Cust_id" />
+                <TableColumn fx:id="tblitem" prefWidth="93.0" text="Item" />
+                <TableColumn fx:id="tblcond" prefWidth="176.60000610351562" text="Kondisi" />
+                <TableColumn fx:id="tbllayanan" prefWidth="109.4000244140625" text="Layanan" />
+                <TableColumn fx:id="tblcuci" prefWidth="101.39996337890625" text="Pencucian" />
+                <TableColumn fx:id="tblrad" prefWidth="94.79998779296875" text="Radius" />
+                <TableColumn fx:id="tblpesan" prefWidth="123.99993896484375" text="Tanggal Pesan" />
+                <TableColumn fx:id="tblambil" prefWidth="176.5999755859375" text="Tanggal Ambil" />
+                <TableColumn fx:id="tblstatus" prefWidth="106.5999755859375" text="Status" />
+                <TableColumn fx:id="tblharga" prefWidth="98.5999755859375" text="Harga" />
+                <TableColumn fx:id="tblPIC" prefWidth="92.5999755859375" text="PIC" />
+            </columns>
+        </TableView>
+        <Button layoutX="1247.0" layoutY="48.0" mnemonicParsing="false" onAction="#Tombollogout" prefHeight="26.0" prefWidth="64.0" text="Log Out" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="23.0" layoutY="92.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="86.0" />
+        <Label layoutX="29.0" layoutY="92.0" prefHeight="26.0" prefWidth="139.0" text="Customer ID">
+            <font>
+                <Font name="Berlin Sans FB" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="custID" disable="true" layoutX="119.0" layoutY="91.0" prefHeight="26.0" prefWidth="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="12.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="229.0" />
+        <Button fx:id="custom" layoutX="178.0" layoutY="91.0" mnemonicParsing="false" onAction="#TombolCustomer" text="Search" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="12.0" layoutY="133.0" stroke="BLACK" strokeType="INSIDE" width="229.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="22.0" layoutY="144.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="86.0" />
+      <Label layoutX="29.0" layoutY="144.0" prefHeight="26.0" prefWidth="55.0" text="Item ID">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ItemID" disable="true" layoutX="119.0" layoutY="144.0" prefHeight="26.0" prefWidth="55.0" />
+      <Button fx:id="itom" layoutX="178.0" layoutY="144.0" mnemonicParsing="false" onAction="#Tombolitem" text="Search" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="23.0" layoutY="195.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="86.0" />
+        <TextField fx:id="pic" disable="true" layoutX="119.0" layoutY="195.0" prefHeight="26.0" prefWidth="55.0" />
+      <Label layoutX="29.0" layoutY="196.0" prefHeight="26.0" prefWidth="78.0" text="PIC ID">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="pegi" layoutX="178.0" layoutY="195.0" mnemonicParsing="false" onAction="#Tombolpeg" text="Search" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="262.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="251.0" />
+        <ComboBox fx:id="radius" layoutX="379.0" layoutY="93.0" prefHeight="26.0" prefWidth="122.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="273.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="98.0" />
+      <Label layoutX="280.0" layoutY="94.0" prefHeight="26.0" prefWidth="55.0" text="Radius">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="262.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="251.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="273.0" layoutY="144.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="98.0" />
+        <ComboBox fx:id="layanan" layoutX="382.0" layoutY="143.0" prefHeight="26.0" prefWidth="122.0" />
+      <Label layoutX="280.0" layoutY="143.0" prefHeight="26.0" prefWidth="86.0" text="Jenis Layanan">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="262.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="251.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="274.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="98.0" />
+        <ComboBox fx:id="pencucian" layoutX="382.0" layoutY="193.0" prefHeight="26.0" prefWidth="122.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="530.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="244.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="542.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="106.0" />
+      <Label layoutX="279.0" layoutY="193.0" prefHeight="26.0" prefWidth="98.0" text="Jenis Pencucian">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="551.0" layoutY="93.0" prefHeight="26.0" prefWidth="78.0" text="Kondisi Item">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="532.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="244.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="543.0" layoutY="145.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="106.0" />
+      <Label layoutX="551.0" layoutY="144.0" prefHeight="26.0" prefWidth="98.0" text="Status Pesanan">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="791.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="261.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="804.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="106.0" />
+        <ComboBox fx:id="status" layoutX="662.0" layoutY="144.0" prefHeight="26.0" prefWidth="106.0" />
+      <Label layoutX="811.0" layoutY="93.0" prefHeight="26.0" prefWidth="98.0" text="Tanggal Pesan">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="791.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="261.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="805.0" layoutY="145.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="106.0" />
+        <DatePicker fx:id="tgl_pesan" layoutX="917.0" layoutY="94.0" prefHeight="26.0" prefWidth="121.0" />
+        <DatePicker fx:id="tgl_ambil" layoutX="920.0" layoutY="145.0" prefHeight="26.0" prefWidth="122.0" />
+      <Label layoutX="810.0" layoutY="144.0" prefHeight="26.0" prefWidth="86.0" text="Tanggal Ambil">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kondisi" layoutX="659.0" layoutY="95.0" prefHeight="26.0" prefWidth="106.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="48.0" layoutX="532.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="311.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="543.0" layoutY="195.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="106.0" />
+      <Label layoutX="551.0" layoutY="194.0" prefHeight="26.0" prefWidth="98.0" text="Harga Per Item">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="harga" disable="true" layoutX="662.0" layoutY="193.0" prefHeight="26.0" prefWidth="106.0" />
+      <Button layoutX="778.0" layoutY="194.0" mnemonicParsing="false" onAction="#lihatharga" text="Cari" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="165.0" layoutX="1064.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="235.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="1072.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="52.0" />
+      <Label layoutX="1079.0" layoutY="87.0" prefHeight="26.0" prefWidth="37.0" text="Total ">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="total" disable="true" layoutX="1130.0" layoutY="88.0" prefHeight="26.0" prefWidth="106.0" />
+      <TextField fx:id="mtd" disable="true" layoutX="1075.0" layoutY="213.0" prefHeight="26.0" prefWidth="71.0" />
+      <Button fx:id="met2" layoutX="1158.0" layoutY="213.0" mnemonicParsing="false" onAction="#Tombolmtd" text="Cari" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="1075.0" layoutY="182.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="139.0" />
+      <Label layoutX="1079.0" layoutY="181.0" prefHeight="26.0" prefWidth="139.0" text="Metode Pembayaran">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a69b8d" height="38.0" layoutX="12.0" layoutY="556.0" stroke="BLACK" strokeType="INSIDE" width="229.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="1074.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="139.0" />
+      <Label layoutX="1081.0" layoutY="120.0" prefHeight="26.0" prefWidth="131.0" text="Tanggal Pembayaran">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="tgl_pembayaran" layoutX="1074.0" layoutY="150.0" prefHeight="26.0" prefWidth="168.0" />
+      <Button fx:id="addData2" layoutX="1250.0" layoutY="85.0" mnemonicParsing="false" onAction="#addData2" prefHeight="157.0" prefWidth="46.0" text="Bayar" />
+      <TextField fx:id="pesananid" disable="true" layoutX="170.0" layoutY="560.0" prefHeight="26.0" prefWidth="46.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec9cf" height="26.0" layoutX="20.0" layoutY="561.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="139.0" />
+      <Label layoutX="32.0" layoutY="561.0" prefHeight="26.0" prefWidth="122.0" text="Selected Order's ID">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

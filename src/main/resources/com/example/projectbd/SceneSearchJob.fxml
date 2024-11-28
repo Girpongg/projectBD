@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.SceneSearchJob">
+    <children>
+        <TableView fx:id="DataTV" layoutX="29.0" layoutY="21.0" onMouseClicked="#getRowTable" prefHeight="149.0" prefWidth="277.0">
+            <columns>
+                <TableColumn fx:id="tbl_jobId" prefWidth="75.0" text="Job_id" />
+                <TableColumn fx:id="tbl_jobnama" prefWidth="199.19995880126953" text="Nama Job" />
+            </columns>
+        </TableView>
+        <Label layoutX="14.0" layoutY="190.0" text="Yang Dipilih:" />
+        <TextField disable="true" fx:id="Select" layoutX="86.0" layoutY="186.0" prefHeight="25.0" prefWidth="31.0" />
+        <Button fx:id="OK" layoutX="142.0" layoutY="186.0" mnemonicParsing="false" onAction="#Kembali" text="ok" />
+    </children>
+</Pane>

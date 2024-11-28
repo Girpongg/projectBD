@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.Scene7">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e7e58" height="400.0" stroke="BLACK" strokeType="INSIDE" width="420.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e5149" height="170.0" layoutX="16.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="393.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#85bc7a" height="47.0" layoutX="305.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#699fa6" height="40.0" layoutX="26.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="226.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ac1b2" height="40.0" layoutX="28.0" layoutY="127.0" stroke="BLACK" strokeType="INSIDE" width="127.0" />
+        <Label layoutX="329.0" layoutY="28.0" prefHeight="25.0" prefWidth="32.0" text="JOB">
+            <font>
+                <Font name="Berlin Sans FB" size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="dataTV" layoutX="14.0" layoutY="186.0" onMouseClicked="#getRowTable" prefHeight="200.0" prefWidth="393.0">
+            <columns>
+                <TableColumn fx:id="tbl_jobId" prefWidth="75.0" text="Job_id" />
+                <TableColumn fx:id="tbl_namaJob" prefWidth="317.0" text="Nama_job" />
+            </columns>
+        </TableView>
+        <Label layoutX="43.0" layoutY="138.0" text="Job id" />
+        <TextField disable="true" fx:id="jobId" layoutX="85.0" layoutY="134.0" prefWidth="60.0" />
+        <Label layoutX="41.0" layoutY="87.0" text="Nama job" />
+        <TextField fx:id="namaJob" layoutX="99.0" layoutY="82.0" prefHeight="25.0" prefWidth="137.0" />
+        <Button layoutX="336.0" layoutY="70.0" mnemonicParsing="false" onAction="#addData" prefHeight="47.0" prefWidth="60.0" text="Save" />
+        <Button layoutX="267.0" layoutY="70.0" mnemonicParsing="false" onAction="#UpdateData" prefHeight="47.0" prefWidth="60.0" text="Update" />
+        <Button layoutX="336.0" layoutY="124.0" mnemonicParsing="false" onAction="#DeleteData" prefHeight="47.0" prefWidth="60.0" text="Delete" />
+        <Button layoutX="267.0" layoutY="124.0" mnemonicParsing="false" onAction="#TombolBalik" prefHeight="47.0" prefWidth="60.0" text="Back" />
+    </children>
+</Pane>

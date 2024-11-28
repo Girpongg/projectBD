@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.Scene5">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4c5e45" height="455.0" stroke="BLACK" strokeType="INSIDE" width="540.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7b8c5e" height="44.0" layoutX="366.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#788670" height="161.0" layoutX="15.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="340.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7498b9" height="44.0" layoutX="15.0" layoutY="192.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+        <TextField fx:id="namapromo" layoutX="148.0" layoutY="40.0" prefHeight="26.0" prefWidth="195.0" />
+        <Label layoutX="406.0" layoutY="12.0" prefHeight="38.0" prefWidth="100.0" text="PROMO">
+            <font>
+                <Font name="Bodoni MT" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="23.0" layoutY="34.0" prefHeight="38.0" prefWidth="100.0" text="Nama Promo">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="23.0" layoutY="67.0" prefHeight="38.0" prefWidth="100.0" text="Promo Mulai">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="23.0" layoutY="99.0" prefHeight="38.0" prefWidth="100.0" text="Promo End">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <TableView fx:id="dataTV" layoutX="8.0" layoutY="245.0" onMouseClicked="#getRowTable" prefHeight="196.0" prefWidth="522.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="Id Promo" />
+                <TableColumn fx:id="nama" prefWidth="110.4000244140625" text="Nama Promo" />
+                <TableColumn fx:id="start" prefWidth="116.80006408691406" text="Start" />
+                <TableColumn fx:id="end" prefWidth="112.5999755859375" text="End" />
+            <TableColumn fx:id="harga" prefWidth="97.79998779296875" text="Potongan Harga" />
+            </columns>
+        </TableView>
+        <Label layoutX="23.0" layoutY="195.0" prefHeight="38.0" prefWidth="141.0" text="ID Promo">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <TextField disable="true" fx:id="idpromo" layoutX="89.0" layoutY="201.0" prefHeight="26.0" prefWidth="64.0" />
+        <Button layoutX="366.0" layoutY="128.0" mnemonicParsing="false" onAction="#UpdateData" prefHeight="44.0" prefWidth="64.0" text="Update" />
+        <Button layoutX="443.0" layoutY="127.0" mnemonicParsing="false" onAction="#DeleteData" prefHeight="44.0" prefWidth="64.0" text="Delete" />
+        <Button layoutX="366.0" layoutY="184.0" mnemonicParsing="false" onAction="#addData" prefHeight="44.0" prefWidth="64.0" text="Save" />
+        <Button layoutX="443.0" layoutY="185.0" mnemonicParsing="false" onAction="#TombolBack" prefHeight="44.0" prefWidth="64.0" text="Back" />
+      <DatePicker fx:id="oi" layoutX="149.0" layoutY="72.0" prefHeight="26.0" prefWidth="195.0" />
+      <DatePicker fx:id="oi2" layoutX="149.0" layoutY="106.0" prefHeight="26.0" prefWidth="195.0" />
+      <Label layoutX="23.0" layoutY="129.0" prefHeight="38.0" prefWidth="100.0" text="Potongan Harga">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="potongan" layoutX="149.0" layoutY="140.0" prefHeight="26.0" prefWidth="48.0" />
+      <Label layoutX="201.0" layoutY="133.0" prefHeight="38.0" prefWidth="100.0" text="\%">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

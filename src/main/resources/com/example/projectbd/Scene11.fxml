@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.Scene11">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#36563b" height="400.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="314.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#92b497" height="39.0" layoutX="10.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" width="271.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#aad4b1" height="39.0" layoutX="128.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="182.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6faca8" height="39.0" layoutX="10.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
+        <Label layoutX="139.0" layoutY="11.0" text="Metode pembayaran">
+            <font>
+                <Font name="Dubai Medium" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="22.0" layoutY="59.0" text="Nama metode">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <TextField fx:id="namaMetode" layoutX="122.0" layoutY="58.0" />
+        <Button layoutX="14.0" layoutY="134.0" mnemonicParsing="false" onAction="#addData" prefHeight="47.0" prefWidth="60.0" text="Save" />
+        <Button layoutX="91.0" layoutY="134.0" mnemonicParsing="false" onAction="#UpdateData" prefHeight="47.0" prefWidth="60.0" text="Update" />
+        <Button layoutX="165.0" layoutY="134.0" mnemonicParsing="false" onAction="#DeleteData" prefHeight="47.0" prefWidth="60.0" text="Delete" />
+        <Button layoutX="240.0" layoutY="134.0" mnemonicParsing="false" onAction="#Tombolkembali" prefHeight="47.0" prefWidth="60.0" text="Back" />
+        <TableView fx:id="data" layoutX="14.0" layoutY="189.0" onMouseClicked="#getRowTable" prefHeight="200.0" prefWidth="287.0">
+            <columns>
+                <TableColumn fx:id="tbl_idMetode" prefWidth="75.0" text="Id_metode" />
+                <TableColumn fx:id="tbl_namaMetode" prefWidth="211.00001525878906" text="Nama metode" />
+            </columns>
+        </TableView>
+        <Label layoutX="27.0" layoutY="101.0" text="ID" />
+        <TextField disable="true" fx:id="id" layoutX="54.0" layoutY="97.0" prefHeight="25.0" prefWidth="80.0" />
+    </children>
+</Pane>

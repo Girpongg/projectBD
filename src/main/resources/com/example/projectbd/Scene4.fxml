@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.Scene4">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#414b35" height="398.0" layoutX="-1.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="526.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6c7661" height="185.0" layoutX="11.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="366.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#728663" height="119.0" layoutX="16.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="275.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#939c7f" height="41.0" layoutX="387.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="123.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#648e94" height="41.0" layoutX="16.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="123.0" />
+        <Label layoutX="404.0" layoutY="4.0" prefHeight="48.0" prefWidth="102.0" text="ITEM BARANG">
+            <font>
+                <Font name="Berlin Sans FB" size="14.0" />
+            </font>
+        </Label>
+        <TableView fx:id="dataTV" layoutX="13.0" layoutY="201.0" onMouseClicked="#getRowTable" prefHeight="185.0" prefWidth="498.0">
+            <columns>
+                <TableColumn fx:id="item" prefWidth="83.19997882843018" text="Item_id" />
+                <TableColumn fx:id="namaitem" minWidth="0.0" prefWidth="157.20001220703125" text="Nama_item" />
+                <TableColumn fx:id="harga" prefWidth="86.00001525878906" text="Harga" />
+            <TableColumn fx:id="sez" prefWidth="86.60003662109375" text="Size" />
+            <TableColumn fx:id="id" prefWidth="86.199951171875" text="Kategori ID" />
+            </columns>
+        </TableView>
+        <TextField fx:id="item_id" disable="true" layoutX="79.0" layoutY="150.0" prefHeight="25.0" prefWidth="52.0" />
+        <Button layoutX="453.0" layoutY="84.0" mnemonicParsing="false" onAction="#addData" prefHeight="47.0" prefWidth="60.0" text="Save" />
+        <Label layoutX="25.0" layoutY="150.0" prefHeight="25.0" prefWidth="60.0" text="Item_id" />
+        <TextField fx:id="nama_item" layoutX="105.0" layoutY="34.0" prefHeight="25.0" prefWidth="169.0" />
+        <TextField fx:id="tulisanharga" layoutX="105.0" layoutY="68.0" prefHeight="25.0" prefWidth="169.0" />
+        <Label layoutX="32.0" layoutY="34.0" prefHeight="25.0" prefWidth="69.0" text="Nama_item" />
+        <Label layoutX="32.0" layoutY="67.0" prefHeight="25.0" prefWidth="60.0" text="Harga" />
+        <Button layoutX="385.0" layoutY="84.0" mnemonicParsing="false" onAction="#Updatedata" prefHeight="47.0" prefWidth="60.0" text="Update" />
+        <Button layoutX="385.0" layoutY="142.0" mnemonicParsing="false" onAction="#Deletedata" prefHeight="47.0" prefWidth="60.0" text="Delete" />
+      <Button layoutX="453.0" layoutY="142.0" mnemonicParsing="false" onAction="#Tombolbackitem" prefHeight="47.0" prefWidth="60.0" text="Back" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5ba691" height="41.0" layoutX="148.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="217.0" />
+      <Label layoutX="163.0" layoutY="149.0" prefHeight="25.0" prefWidth="60.0" text="Kategori_id" />
+      <Button fx:id="kateg" layoutX="319.0" layoutY="150.0" mnemonicParsing="false" onAction="#TombolKategori" text="Cari" />
+      <Label layoutX="33.0" layoutY="101.0" prefHeight="25.0" prefWidth="60.0" text="Size" />
+      <TextField fx:id="size" layoutX="105.0" layoutY="102.0" prefHeight="25.0" prefWidth="169.0" />
+      <TextField fx:id="kategori" disable="true" layoutX="234.0" layoutY="150.0" prefHeight="25.0" prefWidth="75.0" />
+    </children>
+</Pane>

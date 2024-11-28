@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.Scene6">
+    <children>
+        <TableView fx:id="dataTV" onMouseClicked="#getRowTable" prefHeight="202.0" prefWidth="553.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="86.40002286434174" text="ID Promo" />
+                <TableColumn fx:id="nama" prefWidth="128.79999542236328" text="Nama Promo" />
+                <TableColumn fx:id="start" prefWidth="116.0" text="Promo Start" />
+                <TableColumn fx:id="end" prefWidth="117.60003662109375" text="Promo End" />
+            <TableColumn fx:id="potongan" prefWidth="100.79998779296875" text="Potongan harga" />
+            </columns>
+        </TableView>
+        <Button layoutX="189.0" layoutY="220.0" mnemonicParsing="false" onAction="#Kembali" prefHeight="26.0" prefWidth="41.0" text="OK" />
+      <TextField fx:id="coba" disable="true" layoutX="79.0" layoutY="238.0" prefHeight="26.0" prefWidth="48.0" />
+      <Label layoutX="4.0" layoutY="243.0" text="Yang Dipilih :" />
+    </children>
+</AnchorPane>

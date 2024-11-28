@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.SceneSearchItem">
+   <children>
+      <TableView fx:id="dua" layoutY="1.0" onMouseClicked="#getRowTable" prefHeight="242.0" prefWidth="513.0">
+        <columns>
+          <TableColumn fx:id="tbl_itemid" prefWidth="75.0" text="Item id" />
+          <TableColumn fx:id="tbl_nama" prefWidth="108.19998168945312" text="Nama Item" />
+            <TableColumn fx:id="tbl_harga" prefWidth="108.19998168945312" text="Harga" />
+            <TableColumn fx:id="tbl_size" prefWidth="108.19998168945312" text="Size" />
+            <TableColumn fx:id="tbl_kategorid" prefWidth="108.19998168945312" text="Kategori ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="321.0" layoutY="250.0" mnemonicParsing="false" onAction="#Kembali" prefHeight="40.0" prefWidth="57.0" text="OK" />
+      <TextField disable="true" fx:id="dipilih" layoutX="92.0" layoutY="263.0" prefHeight="26.0" prefWidth="181.0" />
+      <Label layoutX="15.0" layoutY="262.0" prefHeight="26.0" prefWidth="68.0" text="Yang Dipilih" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.Scene3">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5c7355" height="400.0" stroke="BLACK" strokeType="INSIDE" width="565.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#82ae74" height="53.0" layoutX="21.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
+        <TextField fx:id="Nama_Kategori" layoutX="147.0" layoutY="35.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#74ada0" height="44.0" layoutX="204.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="139.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#74ada0" height="44.0" layoutX="21.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7a8c62" height="53.0" layoutX="392.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
+        <Label layoutX="407.0" layoutY="22.0" prefHeight="34.0" prefWidth="128.0" text="Kategori Barang">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="34.0" layoutY="30.0" prefHeight="34.0" prefWidth="102.0" text="Nama Kategori" />
+        <Label fx:id="g" layoutX="27.0" layoutY="86.0" prefHeight="34.0" prefWidth="102.0" text="ID Kategori" />
+        <TextField fx:id="IdKategori" disable="true" layoutX="112.0" layoutY="90.0" prefHeight="26.0" prefWidth="47.0" />
+        <TableView fx:id="dataTV" layoutX="21.0" layoutY="132.0" onMouseClicked="#getRowTable" prefHeight="249.0" prefWidth="462.0">
+            <columns>
+                <TableColumn fx:id="agesCol" prefWidth="114.59997367858887" text="ID Kategori" />
+                <TableColumn fx:id="agesCol2" prefWidth="224.60004425048828" text="Nama Kategori" />
+            <TableColumn fx:id="agesCol3" prefWidth="125.0" text="Promo ID" />
+            </columns>
+        </TableView>
+        <Button layoutX="493.0" layoutY="159.0" mnemonicParsing="false" onAction="#addData" prefHeight="34.0" prefWidth="63.0" text="Save" />
+        <Button layoutX="493.0" layoutY="285.0" mnemonicParsing="false" onAction="#UpdateData" prefHeight="34.0" prefWidth="63.0" text="Update" />
+        <Button layoutX="493.0" layoutY="222.0" mnemonicParsing="false" onAction="#DeleteData" prefHeight="34.0" prefWidth="63.0" text="Delete" />
+      <Button layoutX="493.0" layoutY="345.0" mnemonicParsing="false" onAction="#TombolButton" prefHeight="34.0" prefWidth="63.0" text="Back" />
+      <Label layoutX="212.0" layoutY="87.0" prefHeight="34.0" prefWidth="102.0" text="Promo" />
+      <Button fx:id="promo" layoutX="352.0" layoutY="87.0" mnemonicParsing="false" onAction="#TombolPromo" prefHeight="34.0" prefWidth="47.0" text="Cari" />
+      <TextField fx:id="tambahan" disable="true" layoutX="263.0" layoutY="90.0" prefHeight="26.0" prefWidth="63.0" />
+    </children>
+</AnchorPane>

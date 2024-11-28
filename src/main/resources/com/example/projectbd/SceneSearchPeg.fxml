@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="336.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectbd.SceneSearchPeg">
+   <children>
+      <TableView fx:id="data" onMouseClicked="#getRowTable" prefHeight="274.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tbl_Pegawai" prefWidth="86.20001524686813" text="ID Pegawai" />
+          <TableColumn fx:id="tbl_first" prefWidth="93.39999389648438" text="First name" />
+            <TableColumn fx:id="tbl_last" prefWidth="88.99998474121094" text="Last name" />
+            <TableColumn fx:id="tbl_hire" prefWidth="99.0" text="Hire Date" />
+            <TableColumn fx:id="tbl_no" prefWidth="87.800048828125" text="No telp" />
+            <TableColumn fx:id="tbl_salar" prefWidth="78.79998779296875" text="Salary" />
+            <TableColumn fx:id="tbl_jobb" prefWidth="66.79998779296875" text="Job ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="258.0" layoutY="282.0" mnemonicParsing="false" onAction="#Kembali" prefHeight="42.0" prefWidth="64.0" text="OK" />
+      <TextField disable="true" fx:id="pilihan" layoutX="98.0" layoutY="291.0" prefHeight="26.0" prefWidth="73.0" />
+      <Label layoutX="26.0" layoutY="295.0" text="Yang Dipilih" />
+   </children>
+</AnchorPane>
